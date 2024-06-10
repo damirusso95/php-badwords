@@ -1,5 +1,7 @@
 <?php
 $testo = $_POST["testo"];
+// METODO STRLEN PER CONVERTIRE CARATTERI IN NUMERI
+$lunghezza = strlen($testo);
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +12,9 @@ $testo = $_POST["testo"];
     <title>Risultato Testo</title>
 </head>
 <body>
-<h1><?php echo $testo; ?></h1>
+                <!-- STAMPO IL TESTO RICEVUTO -->
+    <!-- <h1><?php echo $testo; ?></h1> -->
+        <h1>Il paragrafo inviato è lungo  <?php echo $lunghezza; ?> caratteri</h1>
+
 </body>
 </html>
